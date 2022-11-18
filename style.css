@@ -1,0 +1,43 @@
+
+*{
+    
+    transition: all 0.3s ease 0s;  
+}
+.e{
+    font-family: monospace;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 77px;
+}
+.e::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: rgb(160, 0, 253);
+     align-self: center;
+     transition: all 0.5s ease 0s;  
+}
+
+.e:hover::after{
+    left: 0;
+    width: 100%;
+}
+
+
+.e:hover{
+    color: rgb(38, 129, 204);
+}
+body{
+    background-color: black;
+}
+
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
